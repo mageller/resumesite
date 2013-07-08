@@ -8,7 +8,37 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1><a href="/">Mark Geller</a></h1>
+            <nav>
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+                <a href="#">Experiments</a>
+            </nav>
+        </div>
+    </header>
     @RenderBody()
+
+    <footer>
+        <div class="container">
+            <nav>
+                <h3>Source</h3>
+                <ul>
+                    <li><a href="https://github.com/mageller">My GitHub repos</a></li>
+                    <li><a href="http://jsfiddle.net/user/mgeller/fiddles/">My JsFiddles</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <h3>Sites</h3>
+                <ul>
+                    <li><a href="http://www.digi.com">Digi International</a></li>
+                    <li><a href="http://www.etherios.com">Etherios</a></li>
+                </ul>
+            </nav>
+            <p>Copyright &copy; 2013, Mark Geller. All rights reserved.</p>
+        </div>
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
