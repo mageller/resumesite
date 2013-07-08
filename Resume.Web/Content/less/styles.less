@@ -4,6 +4,7 @@
 @hero_border_color: #2e4d59;
 @hero_shadow_color: rgba(13, 106, 113, .7);
 @foot_border_color: #535454;
+@foot_header_color: #2e4d59;
 
 .link_animation(@speed: 200ms) {
     -moz-transition: all 200ms ease-in-out;
@@ -153,6 +154,45 @@ footer {
     border-top: 2px solid @foot_border_color;
 }
 
+footer nav {
+    width:33%;
+    float:left;
+}
+
+footer nav h3 {
+    color: @foot_header_color;
+    font-weight:normal;
+    line-height:18px;
+    font-size:18px;
+    margin: 20px 0 0 0;
+}
+
+footer nav ul {
+    list-style:none;
+    margin: 10px 0 20px 0;
+    padding:0;
+}
+
+footer nav li {
+    padding: 2px 0;
+}
+
+footer a, footer a:link, footer a:visited {
+    text-decoration:none;
+    color: @foot_border_color;
+    .link_animation;
+}
+
+footer a:hover
+{
+    color: #fff;
+    .link_animation;
+}
+
+footer p {
+    color: @foot_border_color;
+    font-size: 12px;
+}
 
 @media screen and (max-width: 540px) {
     header h1 {
@@ -188,5 +228,10 @@ footer {
     .main section.projects, .main section.experiments  {
         float:none;
         width:100%;
+    }
+
+    footer nav {
+        float:none;
+        width: 100%;
     }
 }

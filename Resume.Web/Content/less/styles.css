@@ -120,6 +120,46 @@ header nav a {
 footer {
   border-top: 2px solid #535454;
 }
+footer nav {
+  width: 33%;
+  float: left;
+}
+footer nav h3 {
+  color: #2e4d59;
+  font-weight: normal;
+  line-height: 18px;
+  font-size: 18px;
+  margin: 20px 0 0 0;
+}
+footer nav ul {
+  list-style: none;
+  margin: 10px 0 20px 0;
+  padding: 0;
+}
+footer nav li {
+  padding: 2px 0;
+}
+footer a,
+footer a:link,
+footer a:visited {
+  text-decoration: none;
+  color: #535454;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+footer a:hover {
+  color: #fff;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+footer p {
+  color: #535454;
+  font-size: 12px;
+}
 @media screen and (max-width: 540px) {
   header h1 {
     float: none;
@@ -150,6 +190,10 @@ footer {
   }
   .main section.projects,
   .main section.experiments {
+    float: none;
+    width: 100%;
+  }
+  footer nav {
     float: none;
     width: 100%;
   }
