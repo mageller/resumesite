@@ -3,20 +3,24 @@
 }
 
 <header>
-    <h1><a href="/">Mark Geller Portfolio</a></h1>
+    <div class="container">
+        <h1><a href="/">Mark Geller Portfolio</a></h1>
+    </div>
 </header>
 
-<section>
-    <aside>
-        <div><img src="~/Content/images/markg.jpg" alt="Mark Geller"/></div>
-        <h2>Mark A. Geller</h2>
-        <address>
-        1030 Feltl Ct #143<br/>
-        Hopkins, MN 55343<br/>
-        <strong>M:</strong> 801-472-6661<br/>
-            <strong>E:</strong> <a href="mailto:markg@condukia.com">markg@condukia.com</a>
-        </address>
-    </aside>
+<section class="container">
+    <div class="row">
+        <aside class="span3">
+            <div><img src="~/Content/images/markg.jpg" alt="Mark Geller"/></div>
+            <h2>Mark A. Geller</h2>
+            <address>
+                1030 Feltl Ct #143<br/>
+                Hopkins, MN 55343<br/>
+                <strong>M:</strong> 801-472-6661<br/>
+                <strong>E:</strong> <a href="mailto:markg@condukia.com">markg@condukia.com</a>
+            </address>
+        </aside>
+        <div class="span9">
     <section>
         <h2>Summary</h2>
         <p>I’m a web developer with over 10 years of experience in designing and building complex web applications who is 
@@ -95,13 +99,15 @@
                     systems to make it possible to print an ship an online order within 24 hours</li>
             </ul>
         </article>
-    </section>
-    <section>
-        <h2>Education</h2>
-        <p><strong>Brigham Young University</strong>, Provo, UT<br/>
-            Bachelor of Arts – English – Emphasis in technical writing
-        </p>
-    </section>
+        </section>
+            <section>
+                <h2>Education</h2>
+                <p><strong>Brigham Young University</strong>, Provo, UT<br/>
+                    Bachelor of Arts – English – Emphasis in technical writing
+                </p>
+            </section>
+       </div>
+    </div>
 </section>
 
 <footer>

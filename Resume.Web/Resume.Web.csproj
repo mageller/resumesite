@@ -138,6 +138,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\images\markg.jpg" />
+    <Content Include="Content\less\layout.css">
+      <DependentUpon>layout.less</DependentUpon>
+    </Content>
+    <Content Include="Content\less\layout.min.css">
+      <DependentUpon>layout.less</DependentUpon>
+    </Content>
+    <Content Include="Content\less\reset.css">
+      <DependentUpon>reset.less</DependentUpon>
+    </Content>
+    <Content Include="Content\less\reset.min.css">
+      <DependentUpon>reset.less</DependentUpon>
+    </Content>
     <Content Include="Content\less\styles.css">
       <DependentUpon>styles.less</DependentUpon>
     </Content>
@@ -147,6 +159,8 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\less\styles.less" />
+    <Content Include="Content\less\reset.less" />
+    <Content Include="Content\less\layout.less" />
     <None Include="Properties\PublishProfiles\mgresume - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\mgresume - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />

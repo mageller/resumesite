@@ -25,7 +25,10 @@ namespace Resume.Web
 
             // bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css"));
             var lessBundle = new Bundle("~/Content/css");
-            lessBundle.Include("~/Content/less/styles.less");
+            lessBundle.Include("~/Content/less/layout.less",
+                "~/Content/less/reset.less",
+                "~/Content/less/styles.less"
+                );
             lessBundle.Transforms.Add(new LessTransform());
             lessBundle.Transforms.Add(new CssMinify());
 
