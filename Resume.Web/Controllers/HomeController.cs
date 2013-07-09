@@ -16,5 +16,10 @@ namespace Resume.Web.Controllers
             return View();
         }
 
+        public ActionResult About()
+        {
+            return View();
+        }
+
     }
 }
