@@ -130,6 +130,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProjectsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -146,12 +147,6 @@
     <Content Include="Content\images\icons\ico-project.png" />
     <Content Include="Content\images\icons\ico-skills.png" />
     <Content Include="Content\images\markg.jpg" />
-    <Content Include="Content\less\layout.css">
-      <DependentUpon>layout.less</DependentUpon>
-    </Content>
-    <Content Include="Content\less\layout.min.css">
-      <DependentUpon>layout.less</DependentUpon>
-    </Content>
     <Content Include="Content\less\reset.css">
       <DependentUpon>reset.less</DependentUpon>
     </Content>
@@ -168,7 +163,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="Content\less\styles.less" />
     <Content Include="Content\less\reset.less" />
-    <Content Include="Content\less\layout.less" />
     <None Include="Properties\PublishProfiles\mgresume - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\mgresume - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
@@ -198,6 +192,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Projects\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

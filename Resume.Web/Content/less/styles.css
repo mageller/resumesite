@@ -90,6 +90,7 @@ header nav a {
 }
 .main {
   background-color: #fff;
+  min-height: 300px;
 }
 .main aside {
   font-size: 18px;
@@ -174,6 +175,101 @@ header nav a {
   margin-top: 20px;
   float: right;
   width: 59%;
+}
+.breadcrumb {
+  background-color: #0db3d9;
+}
+.breadcrumb ul {
+  list-style: none;
+  overflow: hidden;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+}
+.breadcrumb li {
+  float: left;
+}
+.breadcrumb li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 0px 5px 50px;
+  background: #14839d;
+  position: relative;
+  display: block;
+  float: left;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.breadcrumb li a:hover {
+  background: #0db3d9;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.breadcrumb li a:after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid #14839d;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  left: 100%;
+  z-index: 2;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.breadcrumb li a:hover:after {
+  border-left-color: #0db3d9;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.breadcrumb li a:before {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: 2px;
+  left: 100%;
+  z-index: 1;
+}
+.breadcrumb li:first-child a {
+  padding-left: 20px;
+}
+.breadcrumb li:last-child a {
+  background: #0db3d9 !important;
+  pointer-events: none;
+  cursor: default;
+  -moz-transition: none;
+  -o-transition: none;
+  -webkit-transition: none;
+  transition: none;
+}
+.breadcrumb li:last-child a:after {
+  border-left-color: #0db3d9 !important;
+  pointer-events: none;
+  cursor: default;
+  -moz-transition: none;
+  -o-transition: none;
+  -webkit-transition: none;
+  transition: none;
 }
 footer {
   border-top: 2px solid #535454;
