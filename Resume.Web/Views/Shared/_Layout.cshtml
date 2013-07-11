@@ -12,9 +12,9 @@
         <div class="container">
             <h1><a href="/">Mark Geller</a></h1>
             <nav>
-                <a href="/about">About</a>
-                <a href="/projects">Projects</a>
-                <a href="#">Experiments</a>
+                @Html.ActionLink("About", "About", "Home")
+                @Html.ActionLink("Projects", "Index", "Projects")
+                @Html.ActionLink("Experiments", "Index", "Experiments")
             </nav>
         </div>
     </header>
