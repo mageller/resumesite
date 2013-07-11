@@ -1,22 +1,59 @@
-﻿var Store = Store || {};
+﻿// Namespace
+var Store = Store || {};
 
+// Cart properties
 Store.Cart = function () {
-    var self = this;
-    var items = [];
+    this.items = ko.observableArray([]);
 
-    // add items
-    self.addItem = function (item) {
-        items.push(item);
-    };
+    this.items.subscribe(function (items) {
+        localStorage.setItem("jscart", JSON.stringify(items));
+    });
 
-    self.itemCount = function () {
-        return items.length;
+    return this;
+};
+
+// Events
+Store.Cart.prototype.addItemClick = function (item, ev) {
+    var sku = $(ev.currentTarget).data("sku");
+    if (sku) {
+        this.addItem({ sku: sku });
     }
+};
 
-    // find items
-    // remove items
-    // get total
+// Cart methods
+Store.Cart.prototype.addItem = function (item) {
+    var existing = this.findBySku(item.sku);
+    if (existing) {
+        existing.quantity += 1;
+    } else {
+        var newItem = new Store.CartItem(item);
+        this.items.push(newItem);
+    }
+};
 
-    // local storage
-    // send to service
+Store.Cart.prototype.empty = function () {
+    this.items.removeAll();
+};
+
+Store.Cart.prototype.itemCount = function () {
+    return this.items().length;
+};
+
+Store.Cart.prototype.findBySku = function (sku) {
+    return ko.utils.arrayFirst(this.items(), function (item) {
+        return item.sku === sku;
+    });
+};
+
+Store.Cart.prototype.removeItem = function (sku) {
+    var item = this.findBySku(sku);
+    this.items.remove(item);
+}
+
+// Cart Items
+Store.CartItem = function (args) {
+    this.sku = args.sku || "",
+    this.quantity = args.quantity || 1;
+
+    return this;
 };

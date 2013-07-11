@@ -15,11 +15,16 @@
     <div class="container">
         <h2>JavaScript Cart</h2>
         <div>
-            <button>Add to Cart</button>
-            <div id="cart">
-
-            </div>
+            <a href="#" id="addToCart" data-bind="click: addItemClick" data-sku="legos">Add To Cart</a>
         </div>
+        <div id="cart">
+            <ul>
+                <!-- ko foreach:items -->
+                <li><span data-bind="text: sku"></span> - <span data-bind="text: quantity"></span></li>
+                <!-- /ko -->
+            </ul>
+        </div>
+        <br /><br />
         <div>This project is based on the <a href="http://tekpub.com/blogs/video-releases/7965087" title="Knockout Cart Full Throttle">Knockout Cart Full Throttle</a> project on TekPub</div>
         <p>@Html.ActionLink("Run Jasmine Tests", "jscarttests", "Jasmine")</p>
     </div>
@@ -27,4 +32,10 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jscart")
+<script>
+    $(function () {
+        cart = new Store.Cart();
+        ko.applyBindings(cart);
+    });
+</script>
 }
