@@ -144,6 +144,7 @@
     <Content Include="Content\images\icons\ico-contact.png" />
     <Content Include="Content\images\icons\ico-education.png" />
     <Content Include="Content\images\icons\ico-experiments.png" />
+    <Content Include="Content\images\icons\ico-github.png" />
     <Content Include="Content\images\icons\ico-project.png" />
     <Content Include="Content\images\icons\ico-skills.png" />
     <Content Include="Content\images\markg.jpg" />

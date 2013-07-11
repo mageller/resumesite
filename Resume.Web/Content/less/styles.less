@@ -7,6 +7,7 @@
 @foot_header_color: #2e4d59;
 @skills_cloud: #989899;
 @skills_head: #2e4d59;
+@hd_bg_color: #f3f3f3;
 
 .link_animation(@speed: 200ms) {
     -moz-transition: all 200ms ease-in-out;
@@ -315,6 +316,29 @@ header nav a {
     pointer-events: none;
     cursor:default;
     .no_animation
+}
+
+.github {
+    background-color: @hd_bg_color;
+    min-height:40px;
+    padding-top:10px;
+    font-size:16px;
+}
+
+.github a.button {
+    display: inline-block;
+    margin: auto 5px auto 0;
+    padding: 10px 10px 10px 40px;
+    background: @skills_cloud url('/content/images/icons/ico-github.png') 5px center no-repeat;
+    border-radius:3px;
+    color:#fff;
+    text-decoration:none;
+    .link_animation
+}
+
+.github a.button:hover {
+    .link_animation;
+    background-color: @hero_bg_color;
 }
 
 footer {

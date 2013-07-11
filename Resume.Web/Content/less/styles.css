@@ -271,6 +271,32 @@ header nav a {
   -webkit-transition: none;
   transition: none;
 }
+.github {
+  background-color: #f3f3f3;
+  min-height: 40px;
+  padding-top: 10px;
+  font-size: 16px;
+}
+.github a.button {
+  display: inline-block;
+  margin: auto 5px auto 0;
+  padding: 10px 10px 10px 40px;
+  background: #989899 url('/content/images/icons/ico-github.png') 5px center no-repeat;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.github a.button:hover {
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  background-color: #0db3d9;
+}
 footer {
   border-top: 2px solid #535454;
 }
