@@ -18,6 +18,12 @@ namespace Resume.Web
                 "~/Scripts/jquery.unobtrusive*",
                 "~/Scripts/jquery.validate*"));
 
+            // bundle for javascriptcart
+            bundles.Add(new ScriptBundle("~/bundles/jscart").Include(
+                "~/Scripts/knockout-{version}.js",
+                "~/Scripts/app/cart.js"
+                ));
+
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(

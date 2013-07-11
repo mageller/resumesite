@@ -131,6 +131,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ExperimentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\JasmineController.cs" />
     <Compile Include="Controllers\ProjectsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -149,6 +150,8 @@
     <Content Include="Content\images\icons\ico-project.png" />
     <Content Include="Content\images\icons\ico-skills.png" />
     <Content Include="Content\images\markg.jpg" />
+    <Content Include="Content\jasmine\jasmine.css" />
+    <Content Include="Content\jasmine\jasmine_favicon.png" />
     <Content Include="Content\less\reset.css">
       <DependentUpon>reset.less</DependentUpon>
     </Content>
@@ -167,7 +170,16 @@
     <Content Include="Content\less\reset.less" />
     <None Include="Properties\PublishProfiles\mgresume - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\mgresume - Web Deploy.pubxml" />
+    <Content Include="Scripts\app\cart.js" />
+    <Content Include="Scripts\app\tests\CartSpec.js" />
+    <Content Include="Scripts\jasmine\jasmine-html.js" />
+    <Content Include="Scripts\jasmine\jasmine.js" />
+    <Content Include="Scripts\jasmine\MIT.LICENSE" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Scripts\jasmine-samples\Player.js" />
+    <Content Include="Scripts\jasmine-samples\PlayerSpec.js" />
+    <Content Include="Scripts\jasmine-samples\Song.js" />
+    <Content Include="Scripts\jasmine-samples\SpecHelper.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -177,8 +189,8 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\knockout-2.2.0.debug.js" />
-    <Content Include="Scripts\knockout-2.2.0.js" />
+    <Content Include="Scripts\knockout-2.2.1.debug.js" />
+    <Content Include="Scripts\knockout-2.2.1.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
@@ -196,6 +208,9 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Projects\Index.cshtml" />
     <Content Include="Views\Experiments\Index.cshtml" />
+    <Content Include="Views\Jasmine\SpecRunner.cshtml" />
+    <Content Include="Views\Experiments\javascript-cart.cshtml" />
+    <Content Include="Views\Jasmine\CartRunner.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -16,5 +16,11 @@ namespace Resume.Web.Controllers
             return View();
         }
 
+        [ActionName("javascript-cart")]
+        public ActionResult JavaScriptCart()
+        {
+            return View();
+        }
+
     }
 }

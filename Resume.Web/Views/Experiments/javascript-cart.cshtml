@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "JavaScript Cart";
+}
+
+<section class="breadcrumb">
+    <div class="container">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li>@Html.ActionLink("Experiments", "Index", "Experiments")</li>
+            <li>@Html.ActionLink("JavaScript Cart","javascript-cart")</li>
+        </ul>
+    </div>
+</section>
+<section class="main">
+    <div class="container">
+        <h2>JavaScript Cart</h2>
+        <div>
+            <button>Add to Cart</button>
+            <div id="cart">
+
+            </div>
+        </div>
+        <div>This project is based on the <a href="http://tekpub.com/blogs/video-releases/7965087" title="Knockout Cart Full Throttle">Knockout Cart Full Throttle</a> project on TekPub</div>
+        <p>@Html.ActionLink("Run Jasmine Tests", "jscarttests", "Jasmine")</p>
+    </div>
+</section>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jscart")
+}
