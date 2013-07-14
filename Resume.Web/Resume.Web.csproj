@@ -140,6 +140,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\assert.css" />
     <Content Include="Content\images\connextion-ipad.jpg" />
     <Content Include="Content\images\icons\ico-cloud.png" />
     <Content Include="Content\images\icons\ico-computer.png" />
@@ -170,6 +171,7 @@
     <Content Include="Content\less\reset.less" />
     <None Include="Properties\PublishProfiles\mgresume - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\mgresume - Web Deploy.pubxml" />
+    <Content Include="Scripts\app\assert.js" />
     <Content Include="Scripts\app\cart.js" />
     <Content Include="Scripts\app\testframework.js" />
     <Content Include="Scripts\app\tests\CartSpec.js" />
